@@ -1,0 +1,66 @@
+.section-gestion {
+      margin: 10px;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+      margin: 10px;
+      place-items: center;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+
+    .titulo-card {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+    }
+
+    .numero-card {
+      font-size: 24px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .card .titulo-estudiantes {
+      background-color: #dbe7fe;
+      color: #2563eb;
+    }
+  
+    .card .titulo-cursos {
+      background-color: #fedbde;
+      color: #eb2525;
+    }
+
+    .card .titulo-matriculas {
+      background-color: #fdfedb;
+      color: #c0eb25;
+    }
+
+    .card .titulo-activas {
+      background-color: #fedbfd;
+      color: #eb25eb;
+    }
+
+    .card .titulo-completas {
+      background-color: #ddfedb;
+      color: #25eb4d;
+    }
+    
+    .card .titulo-cancelas {
+      background-color: #fee7db;
+      color: #eb5325;
+    }

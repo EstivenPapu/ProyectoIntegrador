@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriculas</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+    <link rel="stylesheet" href="Estilos/matriculas.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="aside">
+            <header>
+                <h4 class="titulo-header">Sistema de gestion de cursos</h4>
+            </header>
+    
+                <nav class="nav">
+                    <ul>
+                    <li>
+                       <a href="Dashboard.htm">Dashboard</a> <br>
+                    </li>
+                    <li>
+                       <a href="Cursos.html">Cursos</a> <br>
+                    </li>
+                    <li>
+                        <a href="Estudiantes.html">Estudiantes</a> <br>
+                    </li>
+                    <li>
+                      <a href="Matriculas.html">Matriculas</a>
+                    </li>
+                    </ul>
+                </nav>
+                
+                <footer class="footer_header">
+                    <p>Administrador</p>
+                    <p><strong>Estiven Bedoya</strong></p>
+                </footer>
+            </aside>
+    
+            <main class="main">
+            <div class="titulo">
+                <h5>Sistema de gestion de cursos</h5>
+            </div>
+            <section class="section-gestion">
+    
+                <div>
+                    <h3>Matriculas</h3>
+                    <h6>Gestion de cursos registrados<h6>
+                </div>
+                
+                <button>Nueva matricula</button>
+    
+            </section>
+            <input class="buscador" type="text" placeholder="Buscar matriculas...">
+            
+            <select class="estado-lista">
+                <option value="">Todos los estados</option>
+                <option value="">Activa</option>
+                <option value="">Completada</option>
+                <option value="">Cancelada</option>
+            </select>
+    
+            <Table class="tabla">
+                <thead class="tabla-cabezera">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Curso</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+    
+                <tbody class="tabla-cuerpo">
+                    <tr>
+                        <td>Jose</td>
+                        <td>React desde ceero</td>
+                        <td>02-22-26</td>
+                        <td>Activa</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>Spring boot</td>
+                        <td>05-13-25</td>
+                        <td>Cancelada</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Julian</td>
+                        <td>Spring boot</td>
+                        <td>10-04-23</td>
+                        <td>Completada</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+    
+            </Table>
+    
+            
+            <footer class="footer_main">
+                <p>Copiright © Estiven Bedoya 2026</p>
+                <p>-Sistema de gestion de cursos-</p>
+              </footer>
+        </main>
+    </div>
+</body>
+
+</html>
