@@ -1,8 +1,19 @@
-
-
 .estado-lista{
     width: 150px;
-    margin: 10px;
     border-radius: 5px;
     border: 1px solid #99999996;
+    text-align: center;
+}
+.buscado{
+    width: 70%;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #99999996;
+}
+.buscar{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-left: 10px;
+    gap: 10px;
 }

@@ -1,66 +1,108 @@
-.section-gestion {
-      margin: 10px;
-      margin-bottom: 0;
-      margin-top: 20px;
-    }
 
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 10px;
-      margin: 10px;
-      place-items: center;
-    }
 
-    .card {
-      background-color: #ffffff;
-      border-radius: 12px;
-      padding: 20px;
-      width: 300px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    }
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  margin: 10px;
+  place-items: left;
+}
 
-    .titulo-card {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 600;
-      padding: 4px 10px;
-      border-radius: 6px;
-      margin-bottom: 14px;
-    }
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
 
-    .numero-card {
-      font-size: 24px;
-      font-weight: 700;
-      color: #111827;
-    }
+.titulo-card {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: lighter;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
 
-    .card .titulo-estudiantes {
-      background-color: #dbe7fe;
-      color: #2563eb;
-    }
-  
-    .card .titulo-cursos {
-      background-color: #fedbde;
-      color: #eb2525;
-    }
+.numero-card {
+  font-size: 29px;
+  font-weight: 700;
+  color: #111827;
+}
+.card a{
+  text-decoration: none;
+  font-size: 12px;
+  color: #2563eb;
+}
+.card a:hover{
+  text-decoration: underline;
+}
 
-    .card .titulo-matriculas {
-      background-color: #fdfedb;
-      color: #c0eb25;
-    }
+.estadistica{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
 
-    .card .titulo-activas {
-      background-color: #fedbfd;
-      color: #eb25eb;
-    }
+.card-estadistica{
+  background-color: white;
+  width: 500px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 10px;
+}
 
-    .card .titulo-completas {
-      background-color: #ddfedb;
-      color: #25eb4d;
-    }
-    
-    .card .titulo-cancelas {
-      background-color: #fee7db;
-      color: #eb5325;
-    }
+.estadistica h3{
+  margin-bottom: 30px;
+}
+.panel{
+  width: 100%;
+  height: 10px;
+  background-color: #dbe7fe;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.carga{
+  height: 100%;
+  border-radius: 10px;
+}
+.act{
+  background-color: blueviolet;
+  width: 66%;
+}
+.com{
+  background-color: rgb(49, 226, 43);
+  width: 33%;
+}
+.can{
+  background-color: rgb(182, 30, 58);
+  width: 1%;
+}
+.info-tit{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: lighter;
+}
+.porcen-uno h5{
+  color: blueviolet;
+}
+.porcen-dos h5{
+  color: rgb(49, 226, 43);
+}
+.porcen-tres h5{
+  color: rgb(182, 30, 58);
+}
+.tag{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: lighter;
+}

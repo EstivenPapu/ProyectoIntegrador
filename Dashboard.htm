@@ -14,7 +14,7 @@
       <aside class="aside">
         
         <header>
-            <h4 class="titulo-header">Sistema de gestion de cursos</h4>
+            <h4 class="titulo-header">Sistema de gestion de cursos🎓</h4>
         </header>
         
         <nav class="nav">
@@ -41,45 +41,78 @@
         <section class="section-gestion">
           <div>
             <h3>Dashboard</h3>
-            <h6>Resumen general del sistema</h6>
+            <p>Sistema general de matriculas. cursos y estudiantes</p>
           </div>
         </section>
 
         <section class="card-container">
           <div class="card">
-            <span class="titulo-card titulo-estudiantes">Estudiantes</span>
+            <p class="icon">👥</p>
             <p class="numero-card">3</p>
+            <span class="titulo-card titulo-estudiantes">Estudiantes</span>
+            <a href="Estudiantes.html">Ver todos los estudiantes</a>
           </div>
 
           <div class="card">
-            <span class="titulo-card titulo-cursos">Cursos</span>
+            <p class="icon">📚</p>
             <p class="numero-card">2</p>
+            <span class="titulo-card titulo-cursos">Cursos</span>
+            <a href="Cursos.html">Ver todos los cursos</a>
           </div>
 
           <div class="card">
-            <span class="titulo-card titulo-matriculas">Matriculas</span>
+            <p class="icon">📝</p>
             <p class="numero-card">4</p>
-          </div>
-
-          <div class="card">
-            <span class="titulo-card titulo-activas">Activas</span>
-            <p class="numero-card">1</p>
-          </div>
-
-          <div class="card">
-            <span class="titulo-card titulo-completas">Completadas</span>
-            <p class="numero-card">1</p>
-          </div>
-
-          <div class="card">
-            <span class="titulo-card titulo-cancelas">Canceladas</span>
-            <p class="numero-card">1</p>
+            <span class="titulo-card titulo-matriculas">Matriculas</span>
+            <a href="Matriculas.html">Ver todas los matriculas</a>
           </div>
 
         </section>
-        <section class="img">
-          <img src="img/matriculas_estado.png" alt="dashboard">
-          <img src="img/cursos-populares.png" alt="dashboard">
+        <section class="estadistica">
+
+            <div class="card-estadistica">
+
+              <h3>Matriculas por estado</h4>
+
+              <div class="info-tit porcen-uno">
+                <h6>Activas</h6>
+                <h5>2 (66%)</h5>
+              </div>
+              <div class="panel">
+                <div class="carga act"></div>
+              </div>
+
+              <div class="info-tit porcen-dos">
+                <h6>Completadas</h6>
+                <h5>1 (33%)</h5>
+              </div>
+              <div class="panel">
+                <div class="carga com"></div>
+              </div>
+
+              <div class="info-tit porcen-tres">
+                <h6>Canceladas</h6>
+                <h5>0 (0%)</h5>
+              </div>
+              <div class="panel">
+                <div class="carga can"></div>
+              </div>
+
+            </div>
+
+            <div class="card-estadistica">           
+              <h3>Cursos populares</h4>
+
+              <div class="tag uno">
+                <p>Spring Boot</p>
+                <p>2</p>
+              </div>
+              <hr>
+              <div class="tag dos">
+                <p>React Desde Cero</p>
+                <p>1</p>
+              </div>
+            </div>  
         </section>
 
         <footer class="footer_main">
