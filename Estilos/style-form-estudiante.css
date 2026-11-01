@@ -1,0 +1,5 @@
+input:hover, textarea:hover{
+    border-color: #0f1758;
+    box-shadow: 0 0 15px rgba(92, 118, 246, 0.2);
+    transform: translateY(-2px);
+}

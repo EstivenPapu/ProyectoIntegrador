@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario matricula</title>
     <link rel="stylesheet" href="../Estilos/style-form.css">
-    <link rel="stylesheet" href="../Estilos/style-form-matricula.css">
+    <link rel="stylesheet" href="../Estilos/style-form-curso.css">
 </head>
 <body>
     <div class="container-form">
 
-        <h1 class="header-form">Sistema de gestion de cursos</h1>
+        <h1 class="header-for">Sistema de gestion de cursos</h1>
         
         <form class="formulario">
             <div class="header-form">
@@ -18,11 +18,11 @@
             </div>
             <div class="form-group">
                 <label for="codigo">Codigo</label>
-                <input type="text" name="codigo">
+                <input type="text" name="codigo" required>
             </div>
             <div class="form-group">
                 <label for="curso">Nombre del curso</label>
-                <input type="text" name="curso">
+                <input type="text" name="curso" required>
             </div>
             <div class="form-group">
                 <label for="descripcion">Descripcion</label>
@@ -30,7 +30,7 @@
             </div>
             <div class="form-group">
                 <label for="capacidad">Capacidad maxima</label>
-                <input type="number" name="capacidad">
+                <input type="number" name="capacidad" required>
             </div>
             <div class="btn-form">
                 <button>Enviar</button> 

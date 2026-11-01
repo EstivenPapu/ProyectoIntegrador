@@ -1,4 +1,72 @@
-select {
-    padding: 10px;
+.seleccion {
+    padding: 12px 15px;
+    border: 1px solid rgb(186, 185, 185);
+    border-radius: 8px;
+    background-color: #f3f6fa;
+    color: #262627;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolyline points='7 10 12 14 17 10' fill='none' stroke='%23002b80' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
 }
 
+.seleccion:hover {
+    border-color: #0f1758;
+    box-shadow: 0 0 15px rgba(92, 118, 246, 0.2);
+    transform: translateY(-2px);
+}
+
+.seleccion:focus {
+    border-color: #193e68;
+    box-shadow: 0 0 0 3px rgba(92, 118, 246, 0.3), 0 0 20px rgba(25, 27, 138, 0.15);
+}
+
+.seleccion option {
+    color: #131313;
+    padding: 10px;
+    transition: background 0.2s;
+}
+
+.seleccion option:hover {
+    background-color: #0f2041;
+    color: #fff;
+}
+
+.seleccion option:checked {
+    background-color: #232b63;
+    color: #fff;
+}
+
+.form-group input[type="date"] {
+    cursor: pointer;
+    padding: 12px 15px;
+    border: 1px solid #1e3a6e6c;
+    border-radius: 8px;
+    color: #222222;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input[type="date"]:hover {
+    border-color: #0a1030;
+    box-shadow: 0 0 15px rgba(12, 13, 54, 0.2);
+    transform: translateY(-2px);
+}
+
+.form-group input[type="date"]:focus {
+    border-color: #171e54;
+    box-shadow: 0 0 0 3px rgba(92, 110, 246, 0.3);
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}

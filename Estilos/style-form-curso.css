@@ -1,3 +1,13 @@
 .texarea {
-    height: 100px;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 193, 193);
+    resize: vertical;
+    padding: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input:hover, textarea:hover{
+    border-color: #0f1758;
+    box-shadow: 0 0 15px rgba(92, 118, 246, 0.2);
+    transform: translateY(-2px);
 }
