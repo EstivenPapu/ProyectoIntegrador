@@ -40,11 +40,11 @@ main {
     content: "";
     position: absolute;
     left: 40%; 
-    top: 120%; 
+    top: 150%; 
     width: 250%;
     aspect-ratio: 1;
     border-radius: 42%;
-    background: #080e1e;
+    background: #25335b;
     z-index: -1;
     translate: -50% 0;
     transition: top 0.9s ease-out;
@@ -60,10 +60,11 @@ main {
     color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 10px;
-    transition: transform 0.6s;  
+    transition: transform 0.6s;
+    width: 90%;  
 }
 .nav a:hover{
-    background: #080e1e;
+    background:  #25335b;
     transform: translateX(10px);
     color: #fff;
 }
@@ -118,7 +119,7 @@ main {
 
 .buscador {
     margin: 10px;
-    width: 97%;
+    width: 300px;
     border-radius: 5px;
     padding: 5px;
     border: 1px solid #99999996;
@@ -150,9 +151,13 @@ main {
     background-color: #2563eb;
     color: rgb(230, 227, 227);
     font-size: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .section-gestion a:hover{
     background-color: #123581;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.25);
 }
 
 .img {
@@ -195,7 +200,7 @@ th::first-letter{
 
 th, td{
     border-bottom: 1px solid #99999996;
-    padding: 10px;
+    padding: 5px;
     font-size: 12px;
 }
 
@@ -257,7 +262,7 @@ th, td{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 0 10px;
+        padding: 20px;
         z-index: 100;
     }
     .aside .titulo-header{
@@ -270,11 +275,14 @@ th, td{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
+    }
+    .nav a{
+        width: auto;
     }
     .nav a:hover{
-        background: #080e1e;
-        transform: translateY(10px);
+        background:  #25335b;
+        transform: translateY(5px);
         color: #fff;
     }
     .main{
