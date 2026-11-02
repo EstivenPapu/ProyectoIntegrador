@@ -6,6 +6,7 @@
 
 .container{
     display: flex;
+    flex-direction: row;
     min-height: 100vh;
     width: 100%;
 }
@@ -23,6 +24,8 @@ main {
     display: flex;
     flex-direction: column;
     width: 20%;
+    min-width: 200px;
+    max-width: 200px;
     background-color: #02133d;
     min-height: 100%;
     justify-content: center;
@@ -53,7 +56,8 @@ main {
     overflow: hidden;
     isolation: isolate;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.815);
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 10px;
     transition: transform 0.6s;  
@@ -71,7 +75,7 @@ main {
     display: flex;
     flex-direction: column;
     font-size: 12px;
-    gap: 20px;
+    gap: 10px;
 }
 .titulo-header {
     margin: 10px;
@@ -87,6 +91,7 @@ main {
     background-color: #ffffff;
     padding: 20px;
     font-size: 20px;
+    border-bottom: 1px solid rgba(164, 164, 164, 0.471);
 }
 
 .section-gestion {
@@ -100,15 +105,15 @@ main {
 }
 
 .section-gestion {
-  margin: 10px;
-  margin-bottom: 10px;
-  margin-top: 20px;
+    margin: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 .section-gestion h3{
-  font-size: 26px;
+    font-size: 26px;
 }
 .section-gestion h6{
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .buscador {
@@ -160,11 +165,11 @@ main {
 }
 
 .img img {
-   width: 100%; 
-   max-width: 450px;
-   min-width: 400px; 
-   height: 190px;
-   border-radius: 15px;
+    width: 100%; 
+    max-width: 450px;
+    min-width: 400px; 
+    height: 190px;
+    border-radius: 15px;
 }
 
 .tabla {
@@ -201,7 +206,7 @@ th, td{
 }
 
 .eliminar{
-    margin-left: 8px;
+    
     color: rgb(243, 49, 49);
     border: 1px solid rgb(243, 49, 49);
 }
@@ -217,4 +222,74 @@ th, td{
 .editar:hover{
     background-color: #2563eb;
     color: #eef2f7;
+}
+
+.eliminar::before{
+    content: 'Eliminar';
+}
+.eliminar::after{
+    content: '🗑️';
+    display: none;
+}
+.editar::before{
+    content: 'Editar';
+}
+.editar::after{
+    content: '🖊️';
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .aside {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        min-height: 60px;
+        max-width: 100%;
+        background-color: #02133d;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        z-index: 100;
+    }
+    .aside .titulo-header{
+        display: none;
+    }
+    .nav {
+        width: 100%;
+    }
+    .nav, .nav ul{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .nav a:hover{
+        background: #080e1e;
+        transform: translateY(10px);
+        color: #fff;
+    }
+    .main{
+        width: 100%;
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+    .footer_header{
+        display: none;
+    }
+
+    .eliminar::before, .editar::before{
+        display: none;
+    }
+    .eliminar::after, .editar::after{
+        display: inline;
+    }
 }
